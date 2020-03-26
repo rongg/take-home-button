@@ -5,6 +5,7 @@ html, body{
 	height:100%;
 	width:100%;
 	font-family:'Open Sans';
+    font-size: 100%;
 }
 #app{
 	height:100%;
@@ -18,7 +19,36 @@ html, body{
 	align-items:center;
 }
 .button{
-	height:70px;
+    display: flex;
+    align-items: center;
+    padding: 8px 4px;
+    height:70px;
 	width:250px;
-	border:1px solid #ccc;
+    border-radius: 10px;
+    background:  #1a1aff linear-gradient(to bottom,  #1a1aff 5%, #1611ba 100%)/*, #c4c6f3 20%, #aaabff 30%, #656ba6 40%, #797df7 50%, #3533a2 60%, #6b6ccd 70 %, #5e5ffe 100%);*/
+}
+.inner-border{
+    display: inline-flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+.circle{
+    border-radius: 50%;
+    background-color: rgba(200,200,200, 0.45);
+    height: 12px;
+    width: 12px;
+    margin: 0 16px;
+}
+.text{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    letter-spacing: .35rem;
+    font-weight: 600;
+    text-shadow: 0 2px #191919;
+    flex-grow: 2;
+    text-align: center;
 }
